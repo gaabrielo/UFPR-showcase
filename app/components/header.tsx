@@ -1,5 +1,7 @@
-import { CommandIcon, Squircle, SquircleIcon } from 'lucide-react';
+import { CommandIcon, MenuIcon, Squircle, SquircleIcon } from 'lucide-react';
 import { LanguageSwitcher } from '~/components/language-switcher';
+import { Button } from '~/components/ui/button';
+import { SidebarTrigger } from '~/components/ui/sidebar';
 
 export default function Header() {
   return (
@@ -12,6 +14,9 @@ export default function Header() {
               Grupo de Pesquisa e Estudos Científicos da UFPR
             </span>
           </div>
+
+          <SidebarTrigger className="md:hidden" />
+
           <nav className="hidden md:flex items-center space-x-8">
             <a
               href="/"

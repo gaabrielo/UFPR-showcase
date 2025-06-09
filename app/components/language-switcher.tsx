@@ -12,14 +12,17 @@ import {
   DropdownMenuTrigger,
 } from '~/components/ui/dropdown-menu';
 import { Button } from '~/components/ui/button';
+import { cn } from '~/lib/utils';
 
 export function LanguageSwitcher({
   options,
+  fit = true,
 }: {
   options: {
     name: string;
     logo: string;
   }[];
+  fit?: boolean;
 }) {
   const [activeTeam, setActiveTeam] = React.useState(options[0]);
 
@@ -29,8 +32,11 @@ export function LanguageSwitcher({
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
-        <Button className="w-fit px-1.5" variant="outline">
+      <DropdownMenuTrigger asChild>
+        <Button
+          className={cn('px-1.5', fit ? 'w-fit' : 'w-full')}
+          variant="outline"
+        >
           <div className="bg-transparent text-primary flex aspect-square size-5 items-center justify-center rounded-md">
             <img
               src={activeTeam.logo}
@@ -38,7 +44,9 @@ export function LanguageSwitcher({
               className="size-5"
             />
           </div>
-          {/* <span className="truncate font-medium">{activeTeam.name}</span> */}
+          {!fit && (
+            <span className="truncate font-medium">{activeTeam.name}</span>
+          )}
           <ChevronDown className="opacity-50" />
         </Button>
       </DropdownMenuTrigger>
