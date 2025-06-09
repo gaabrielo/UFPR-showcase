@@ -4,10 +4,12 @@ import Header from '~/components/header';
 
 export default function Layout() {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col min-h-screen">
       <Header />
       <Outlet />
-      <Footer />
+      <footer className="mt-auto mb-0">
+        <Footer />
+      </footer>
     </div>
   );
 }
