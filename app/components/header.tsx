@@ -49,22 +49,7 @@ export default function Header() {
               Contato
             </a>
             {/* <Button className="bg-blue-600 hover:bg-blue-700">Join Us</Button> */}
-            <LanguageSwitcher
-              options={[
-                {
-                  name: 'Português',
-                  logo: '/images/flags/pt-br.png',
-                },
-                {
-                  name: 'Inglês',
-                  logo: '/images/flags/en-us.png',
-                },
-                {
-                  name: 'Espanhol',
-                  logo: '/images/flags/es-es.png',
-                },
-              ]}
-            />
+            <LanguageSwitcher />
           </nav>
         </div>
       </div>
