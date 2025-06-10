@@ -17,8 +17,11 @@ export function CoreValues() {
             const Icon = icons[value.icon as keyof typeof icons];
 
             return (
-              <div key={index} className="p-6 bg-white rounded-xl shadow-sm">
-                {Icon && <Icon className="w-12 h-12 text-teal-600 mb-6" />}
+              <div
+                key={index}
+                className="px-6 py-8 bg-white rounded-xl shadow-sm"
+              >
+                {Icon && <Icon className="w-12 h-12 text-teal-600 mb-8" />}
 
                 <h3 className="text-xl font-semibold mb-4">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>

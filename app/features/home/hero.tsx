@@ -46,7 +46,7 @@ export function Hero() {
           </div>
 
           <div className="mt-8">
-            <h2 className="text-3xl font-bold text-gray-900">
+            <h2 className="text-2xl font-bold text-gray-900">
               {t('hero.title')}
             </h2>
           </div>
