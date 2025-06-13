@@ -54,8 +54,6 @@ export function Students() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  console.log('STUDENTS => ', getData('students.list'));
-
   return (
     <section className="py-16 overflow-hidden" ref={containerRef}>
       <div className="container mx-auto px-4">
