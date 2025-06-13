@@ -3,8 +3,8 @@
 - [x] Incluir sidebar
 - [ ] Incluir links de interesse para integrantes
 - [ ] Incluir rota de publicações acadêmicas
-- [ ] Incluir tradução com i18n
-- [ ] Formatar base de dados para conteúdo modificável (JSON file)
+- [x] Incluir tradução com i18n
+- [x] Formatar base de dados para conteúdo modificável (JSON file)
 
 ## Getting Started
 
