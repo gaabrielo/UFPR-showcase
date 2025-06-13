@@ -14,6 +14,17 @@ import { getInstance } from '~/middleware/i18next';
 
 export const streamTimeout = 5_000;
 
+export function getLoadContext(request: Request, response: Response) {
+  // Create a new Map instance to store context
+  const loadContext = new Map();
+
+  // Add any needed contexts
+  // const user = await getUserFromSession(req);
+  // loadContext.set(userContext, user);
+
+  return loadContext;
+}
+
 export default function handleRequest(
   request: Request,
   responseStatusCode: number,

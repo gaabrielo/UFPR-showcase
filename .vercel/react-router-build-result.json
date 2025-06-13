@@ -1,0 +1,124 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs_eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "root": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/home": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/contact": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/publishing": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/locales": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "app/root.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "layouts/layout": {
+        "id": "layouts/layout",
+        "parentId": "root",
+        "file": "app/layouts/layout.tsx",
+        "config": {}
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "layouts/layout",
+        "file": "app/routes/home.tsx",
+        "index": true,
+        "config": {}
+      },
+      "routes/contact": {
+        "id": "routes/contact",
+        "parentId": "layouts/layout",
+        "file": "app/routes/contact.tsx",
+        "path": "/contact",
+        "config": {}
+      },
+      "routes/publishing": {
+        "id": "routes/publishing",
+        "parentId": "layouts/layout",
+        "file": "app/routes/publishing.tsx",
+        "path": "/publishing",
+        "config": {}
+      },
+      "routes/locales": {
+        "id": "routes/locales",
+        "parentId": "root",
+        "file": "app/routes/locales.ts",
+        "path": "api/locales/:lng/:ns",
+        "config": {}
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "C:/Users/Usuario/Projects/UFPR/ufpr-showcase/app",
+    "basename": "/",
+    "buildDirectory": "C:/Users/Usuario/Projects/UFPR/ufpr-showcase/build",
+    "future": {
+      "unstable_middleware": true,
+      "unstable_optimizeDeps": false,
+      "unstable_splitRouteModules": false,
+      "unstable_subResourceIntegrity": false,
+      "unstable_viteEnvironmentApi": false
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "layouts/layout": {
+        "id": "layouts/layout",
+        "parentId": "root",
+        "file": "layouts/layout.tsx"
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "layouts/layout",
+        "file": "routes/home.tsx",
+        "index": true
+      },
+      "routes/contact": {
+        "id": "routes/contact",
+        "parentId": "layouts/layout",
+        "file": "routes/contact.tsx",
+        "path": "/contact"
+      },
+      "routes/publishing": {
+        "id": "routes/publishing",
+        "parentId": "layouts/layout",
+        "file": "routes/publishing.tsx",
+        "path": "/publishing"
+      },
+      "routes/locales": {
+        "id": "routes/locales",
+        "parentId": "root",
+        "file": "routes/locales.ts",
+        "path": "api/locales/:lng/:ns"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "lazy",
+      "manifestPath": "/__manifest"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
