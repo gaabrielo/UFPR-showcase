@@ -1,18 +1,12 @@
 import {
-  Calendar,
   FolderOpenIcon,
   Home,
-  Inbox,
-  MessageSquareIcon,
-  MessageSquareReplyIcon,
-  MessageSquareShareIcon,
   NewspaperIcon,
-  Search,
   SendIcon,
-  Settings,
   UsersIcon,
-  UsersRoundIcon,
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { NavLink } from 'react-router';
 import { LanguageSwitcher } from '~/components/language-switcher';
 
 import {
@@ -26,37 +20,40 @@ import {
   SidebarMenuItem,
   SidebarSeparator,
 } from '~/components/ui/sidebar';
+import { getNavItems } from '~/lib/utils';
 
 // Menu items.
-export const navItems = [
-  {
-    title: 'Sobre',
-    url: '/',
-    icon: Home,
-  },
-  {
-    title: 'Projetos',
-    url: '/#projects',
-    icon: FolderOpenIcon,
-  },
-  {
-    title: 'Integrantes',
-    url: '/#people',
-    icon: UsersIcon,
-  },
-  {
-    title: 'Publicações',
-    url: '/publishing',
-    icon: NewspaperIcon,
-  },
-  {
-    title: 'Contato',
-    url: '/contact',
-    icon: MessageSquareIcon,
-  },
-];
+// export const navItems = [
+//   {
+//     title: 'Sobre',
+//     url: '/',
+//     icon: Home,
+//   },
+//   {
+//     title: 'Projetos',
+//     url: '/#projects',
+//     icon: FolderOpenIcon,
+//   },
+//   {
+//     title: 'Integrantes',
+//     url: '/#people',
+//     icon: UsersIcon,
+//   },
+//   {
+//     title: 'Publicações',
+//     url: '/publishing',
+//     icon: NewspaperIcon,
+//   },
+//   {
+//     title: 'Contato',
+//     url: '/contact',
+//     icon: SendIcon,
+//   },
+// ];
 
 export function AppSidebar() {
+  const { t } = useTranslation();
+  const navItems = getNavItems(t);
   return (
     <Sidebar>
       <SidebarContent>
@@ -67,10 +64,10 @@ export function AppSidebar() {
               {navItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url}>
+                    <NavLink to={item.url}>
                       <item.icon />
                       <span>{item.title}</span>
-                    </a>
+                    </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
@@ -81,23 +78,7 @@ export function AppSidebar() {
             Traduzir
           </SidebarGroupLabel> */}
           <SidebarGroupContent className="mt-auto mb-0">
-            <LanguageSwitcher
-              fit={false}
-              options={[
-                {
-                  name: 'Português',
-                  logo: '/images/flags/pt-br.png',
-                },
-                {
-                  name: 'Inglês',
-                  logo: '/images/flags/en-us.png',
-                },
-                {
-                  name: 'Espanhol',
-                  logo: '/images/flags/es-es.png',
-                },
-              ]}
-            />
+            <LanguageSwitcher fullWidth />
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>

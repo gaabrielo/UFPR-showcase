@@ -1,14 +1,14 @@
 import { BookOpen, Target, Users } from 'lucide-react';
-import { useLanguage } from '~/hooks/use-language';
+import { useData } from '~/hooks/use-data';
 
 export function CoreValues() {
-  const { t } = useLanguage();
+  const { getData } = useData();
 
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {t('coreValues.values').map((value: any, index: number) => {
+          {getData('coreValues.values').map((value: any, index: number) => {
             const icons = {
               BookOpen,
               Users,

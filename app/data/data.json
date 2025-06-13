@@ -1,186 +1,213 @@
 {
   "meta": {
     "title": {
-      "pt-BR": "Grupo de Pesquisa e Estudos Científicos da UFPR",
-      "en-US": "UFPR Scientific Research and Studies Group",
-      "es-ES": "Grupo de Investigación y Estudios Científicos de la UFPR"
+      "pt": "Computação e Tecnologias Digitais na Educação",
+      "en": "Computing and Digital Technologies in Education",
+      "es": "Computación y Tecnologías Digitales en la Educación"
     },
     "description": {
-      "pt-BR": "Grupo de pesquisa dedicado ao avanço da ciência e tecnologia na UFPR",
-      "en-US": "Research group dedicated to advancing science and technology at UFPR",
-      "es-ES": "Grupo de investigación dedicado al avance de la ciencia y tecnología en la UFPR"
+      "pt": "Desenvolvimento de competências em pesquisa local e em outras instituições por meio de realização de parcerias Nacionais e Internacionais (USP, UEM, UTFPR, UENP, Campus Avançado de Jandaia do Sul, Campus Litoral e Universidade do Minho, Braga, Portugal) Integração entre os projetos de extensão e projetos de pesquisa dos cursos de graduação, visando retomar o papel da UFPR- Setor Palotina para além dos muros institucionais, integrando pesquisa com projetos que visam a solução de problemas existentes, de necessidade e interesse da comunidade local Impacto positivo no desenvolvimento de competências do próprio Setor, por meio da interação do grupo de pesquisa com outros cursos, como Agronomia, Licenciatura em Ciências Exatas e Engenharia de Energias, conforme projetos em andamento e já realizados (Biorreator de Iogurtes, Horta hidropônica com monitoramento usando Arduíno, construção de minifoguetes, oficinas de Arduíno, robótica educacional e desenvolvimento de jogos eletrônicos).",
+      "en": "Development of competencies in local research and other institutions through National and International partnerships (USP, UEM, UTFPR, UENP, Jandaia do Sul Advanced Campus, Coastal Campus and University of Minho, Braga, Portugal). Integration between extension projects and undergraduate research projects, aiming to restore UFPR-Palotina Sector's role beyond institutional walls, integrating research with projects that aim to solve existing problems of necessity and interest to the local community. Positive impact on the development of the Sector's own competencies, through the interaction of the research group with other courses, such as Agronomy, Exact Sciences Degree and Energy Engineering, according to ongoing and completed projects (Yogurt Bioreactor, Hydroponic Garden with Arduino monitoring, mini-rocket construction, Arduino workshops, educational robotics and electronic game development).",
+      "es": "Desarrollo de competencias en investigación local y otras instituciones a través de asociaciones Nacionales e Internacionales (USP, UEM, UTFPR, UENP, Campus Avanzado de Jandaia do Sul, Campus Litoral y Universidad de Minho, Braga, Portugal). Integración entre proyectos de extensión y proyectos de investigación de pregrado, con el objetivo de restaurar el papel del Sector UFPR-Palotina más allá de los muros institucionales, integrando la investigación con proyectos que buscan resolver problemas existentes de necesidad e interés para la comunidad local. Impacto positivo en el desarrollo de las competencias propias del Sector, a través de la interacción del grupo de investigación con otros cursos, como Agronomía, Licenciatura en Ciencias Exactas e Ingeniería Energética, según proyectos en curso y completados (Biorreactor de Yogur, Huerto Hidropónico con monitoreo Arduino, construcción de minicoetes, talleres de Arduino, robótica educativa y desarrollo de juegos electrónicos)."
     }
   },
   "hero": {
-    "title": {
-      "pt-BR": "Nossos Pilares",
-      "en-US": "Our Pillars",
-      "es-ES": "Nuestros Pilares"
-    },
-    "description": {
-      "pt-BR": "Nosso trabalho é guiado por um conjunto de valores fundamentais que definem nossa abordagem à pesquisa e colaboração.",
-      "en-US": "Our work is guided by a set of core values that define our approach to research and collaboration.",
-      "es-ES": "Nuestro trabajo está guiado por un conjunto de valores fundamentales que definen nuestro enfoque en la investigación y colaboración."
-    },
     "video": "/videos/cover-4k.mp4"
   },
   "coreValues": {
-    "title": {
-      "pt-BR": "Nossos Valores Fundamentais",
-      "en-US": "Our Core Values",
-      "es-ES": "Nuestros Valores Fundamentales"
-    },
-    "description": {
-      "pt-BR": "Nossos valores fundamentais definem nossa abordagem à pesquisa e colaboração.",
-      "en-US": "Our core values define our approach to research and collaboration.",
-      "es-ES": "Nuestros valores fundamentales definen nuestro enfoque en la investigación y colaboración."
-    },
     "values": [
       {
         "icon": "BookOpen",
         "title": {
-          "pt-BR": "Excelência em Pesquisa",
-          "en-US": "Research Excellence",
-          "es-ES": "Excelencia en Investigación"
+          "pt": "Excelência em Pesquisa",
+          "en": "Research Excellence",
+          "es": "Excelencia en Investigación"
         },
         "description": {
-          "pt-BR": "Estamos comprometidos em expandir os limites da ciência de dados através de pesquisas rigorosas e metodologias inovadoras.",
-          "en-US": "We are committed to pushing the boundaries of data science through rigorous research and innovative methodologies.",
-          "es-ES": "Estamos comprometidos a expandir los límites de la ciencia de datos a través de investigaciones rigurosas y metodologías innovadoras."
+          "pt": "Estamos comprometidos em expandir os limites da ciência de dados através de pesquisas rigorosas e metodologias inovadoras.",
+          "en": "We are committed to pushing the boundaries of data science through rigorous research and innovative methodologies.",
+          "es": "Estamos comprometidos a expandir los límites de la ciencia de datos a través de investigaciones rigurosas y metodologías innovadoras."
         }
       },
       {
         "icon": "Users",
         "title": {
-          "pt-BR": "Ambiente Colaborativo",
-          "en-US": "Collaborative Environment",
-          "es-ES": "Ambiente Colaborativo"
+          "pt": "Ambiente Colaborativo",
+          "en": "Collaborative Environment",
+          "es": "Ambiente Colaborativo"
         },
         "description": {
-          "pt-BR": "Nosso grupo promove um ambiente colaborativo e inclusivo, reunindo diversas perspectivas para enfrentar desafios complexos.",
-          "en-US": "Our group fosters a collaborative and inclusive environment, bringing together diverse perspectives to tackle complex challenges.",
-          "es-ES": "Nuestro grupo fomenta un ambiente colaborativo e inclusivo, reuniendo diversas perspectivas para abordar desafíos complejos."
+          "pt": "Nosso grupo promove um ambiente colaborativo e inclusivo, reunindo diversas perspectivas para enfrentar desafios complexos.",
+          "en": "Our group fosters a collaborative and inclusive environment, bringing together diverse perspectives to tackle complex challenges.",
+          "es": "Nuestro grupo fomenta un ambiente colaborativo e inclusivo, reuniendo diversas perspectivas para abordar desafíos complejos."
         }
       },
       {
         "icon": "Target",
         "title": {
-          "pt-BR": "Descobertas Impactantes",
-          "en-US": "Impactful Discoveries",
-          "es-ES": "Descubrimientos Impactantes"
+          "pt": "Descobertas Impactantes",
+          "en": "Impactful Discoveries",
+          "es": "Descubrimientos Impactantes"
         },
         "description": {
-          "pt-BR": "Buscamos traduzir nossa pesquisa em aplicações do mundo real, causando um impacto significativo na sociedade e na indústria.",
-          "en-US": "We strive to translate our research into real-world applications, making a significant impact on society and industry.",
-          "es-ES": "Nos esforzamos por traducir nuestra investigación en aplicaciones del mundo real, generando un impacto significativo en la sociedad y la industria."
+          "pt": "Buscamos traduzir nossa pesquisa em aplicações do mundo real, causando um impacto significativo na sociedade e na indústria.",
+          "en": "We strive to translate our research into real-world applications, making a significant impact on society and industry.",
+          "es": "Nos esforzamos por traducir nuestra investigación en aplicaciones del mundo real, generando un impacto significativo en la sociedad y la industria."
         }
       }
     ]
   },
-  "featuredProjects": {
-    "title": {
-      "pt-BR": "Projetos em Destaque",
-      "en-US": "Featured Projects",
-      "es-ES": "Proyectos Destacados"
-    },
-    "projects": [
+  "projects": {
+    "list": [
       {
         "id": "healthcare-analytics",
         "title": {
-          "pt-BR": "Análise Preditiva para Saúde",
-          "en-US": "Predictive Analytics for Healthcare",
-          "es-ES": "Análisis Predictivo para la Salud"
+          "pt": "Análise Preditiva para Saúde",
+          "en": "Predictive Analytics for Healthcare",
+          "es": "Análisis Predictivo para la Salud"
         },
         "description": {
-          "pt-BR": "Desenvolvendo modelos preditivos para melhorar os resultados dos pacientes e otimizar a alocação de recursos de saúde.",
-          "en-US": "Developing predictive models to improve patient outcomes and optimize healthcare resource allocation.",
-          "es-ES": "Desarrollando modelos predictivos para mejorar los resultados de los pacientes y optimizar la asignación de recursos sanitarios."
+          "pt": "Desenvolvendo modelos preditivos para melhorar os resultados dos pacientes e otimizar a alocação de recursos de saúde.",
+          "en": "Developing predictive models to improve patient outcomes and optimize healthcare resource allocation.",
+          "es": "Desarrollando modelos predictivos para mejorar los resultados de los pacientes y optimizar la asignación de recursos sanitarios."
         },
         "gradient": "from-teal-600 to-teal-800"
       },
       {
         "id": "machine-learning",
         "title": {
-          "pt-BR": "Técnicas Avançadas de Aprendizado de Máquina",
-          "en-US": "Advanced Machine Learning Techniques",
-          "es-ES": "Técnicas Avanzadas de Aprendizaje Automático"
+          "pt": "Técnicas Avançadas de Aprendizado de Máquina",
+          "en": "Advanced Machine Learning Techniques",
+          "es": "Técnicas Avanzadas de Aprendizaje Automático"
         },
         "description": {
-          "pt-BR": "Explorando novos algoritmos de aprendizado de máquina para melhorar a precisão e interpretabilidade dos modelos.",
-          "en-US": "Exploring novel machine learning algorithms to enhance model accuracy and interpretability.",
-          "es-ES": "Explorando nuevos algoritmos de aprendizaje automático para mejorar la precisión e interpretabilidad de los modelos."
+          "pt": "Explorando novos algoritmos de aprendizado de máquina para melhorar a precisão e interpretabilidade dos modelos.",
+          "en": "Exploring novel machine learning algorithms to enhance model accuracy and interpretability.",
+          "es": "Explorando nuevos algoritmos de aprendizaje automático para mejorar la precisión e interpretabilidad de los modelos."
         },
         "gradient": "from-gray-800 to-slate-600"
       },
       {
         "id": "data-driven",
         "title": {
-          "pt-BR": "Tomada de Decisão Baseada em Dados",
-          "en-US": "Data-Driven Decision Making",
-          "es-ES": "Toma de Decisiones Basada en Datos"
+          "pt": "Tomada de Decisão Baseada em Dados",
+          "en": "Data-Driven Decision Making",
+          "es": "Toma de Decisiones Basada en Datos"
         },
         "description": {
-          "pt-BR": "Utilizando análise de dados para apoiar a tomada de decisões baseada em evidências em vários domínios.",
-          "en-US": "Leveraging data analytics to support evidence-based decision making in various domains.",
-          "es-ES": "Aprovechando el análisis de datos para apoyar la toma de decisiones basada en evidencia en varios dominios."
+          "pt": "Utilizando análise de dados para apoiar a tomada de decisões baseada em evidências em vários domínios.",
+          "en": "Leveraging data analytics to support evidence-based decision making in various domains.",
+          "es": "Aprovechando el análisis de datos para apoyar la toma de decisiones basada en evidencia en varios dominios."
         },
         "gradient": "from-gray-500 to-gray-400"
       }
     ]
   },
   "professors": {
-    "title": {
-      "pt-BR": "Professores Pesquisadores",
-      "en-US": "Research Professors",
-      "es-ES": "Profesores Investigadores"
-    },
     "list": [
       {
         "id": "amelia-rodriguez",
         "name": "Dr. Amelia Rodriguez",
         "role": {
-          "pt-BR": "Professora de Ciência de Dados, Especialista em Aprendizado de Máquina",
-          "en-US": "Professor of Data Science, Specializing in Machine Learning",
-          "es-ES": "Profesora de Ciencia de Datos, Especialista en Aprendizaje Automático"
+          "pt": "Professora de Ciência de Dados, Especialista em Aprendizado de Máquina",
+          "en": "Professor of Data Science, Specializing in Machine Learning",
+          "es": "Profesora de Ciencia de Datos, Especialista en Aprendizaje Automático"
         },
+        "socials": [
+          {
+            "icon": "linkedin",
+            "url": "https://www.linkedin.com/"
+          },
+          {
+            "icon": "github",
+            "url": "https://github.com/"
+          },
+          {
+            "icon": "twitter",
+            "url": "https://twitter.com/"
+          }
+        ],
         "image": "/images/professors/1.jpg"
       },
       {
         "id": "ethan-carter",
         "name": "Dr. Ethan Carter",
         "role": {
-          "pt-BR": "Professor de Estatística, Foco em Modelagem Preditiva",
-          "en-US": "Professor of Statistics, Focusing on Predictive Modeling",
-          "es-ES": "Profesor de Estadística, Enfocado en Modelado Predictivo"
+          "pt": "Professor de Estatística, Foco em Modelagem Preditiva",
+          "en": "Professor of Statistics, Focusing on Predictive Modeling",
+          "es": "Profesor de Estadística, Enfocado en Modelado Predictivo"
         },
+        "socials": [
+          {
+            "icon": "linkedin",
+            "url": "https://www.linkedin.com/"
+          },
+          {
+            "icon": "twitter",
+            "url": "https://twitter.com/"
+          }
+        ],
         "image": "/images/professors/2.jpg"
       },
       {
         "id": "noah-bennett",
         "name": "Dr. Noah Bennett",
         "role": {
-          "pt-BR": "Professor Associado, Especialista em Visualização de Dados",
-          "en-US": "Associate Professor, Expertise in Data Visualization",
-          "es-ES": "Profesor Asociado, Experto en Visualización de Datos"
+          "pt": "Professor Associado, Especialista em Visualização de Dados",
+          "en": "Associate Professor, Expertise in Data Visualization",
+          "es": "Profesor Asociado, Experto en Visualización de Datos"
         },
+        "socials": [
+          {
+            "icon": "linkedin",
+            "url": "https://www.linkedin.com/"
+          },
+          {
+            "icon": "github",
+            "url": "https://github.com/"
+          },
+          {
+            "icon": "twitter",
+            "url": "https://twitter.com/"
+          }
+        ],
         "image": "/images/professors/3.jpg"
+      },
+      {
+        "id": "amelia-rodriguez",
+        "name": "Dr. Amelia Rodriguez",
+        "role": {
+          "pt": "Professora de Ciência de Dados, Especialista em Aprendizado de Máquina",
+          "en": "Professor of Data Science, Specializing in Machine Learning",
+          "es": "Profesora de Ciencia de Datos, Especialista en Aprendizaje Automático"
+        },
+        "socials": [
+          {
+            "icon": "linkedin",
+            "url": "https://www.linkedin.com/"
+          },
+          {
+            "icon": "github",
+            "url": "https://github.com/"
+          },
+          {
+            "icon": "twitter",
+            "url": "https://twitter.com/"
+          }
+        ],
+        "image": "/images/professors/1.jpg"
       }
     ]
   },
   "students": {
-    "title": {
-      "pt-BR": "Pesquisadores Estudantes",
-      "en-US": "Student Researchers",
-      "es-ES": "Investigadores Estudiantes"
-    },
     "list": [
       {
         "id": "olivia-harper",
         "name": "Olivia Harper",
         "role": {
-          "pt-BR": "Doutoranda, Pesquisando Aprendizado Profundo",
-          "en-US": "PhD Candidate, Researching Deep Learning",
-          "es-ES": "Candidata a Doctorado, Investigando Aprendizaje Profundo"
+          "pt": "Doutoranda, Pesquisando Aprendizado Profundo",
+          "en": "PhD Candidate, Researching Deep Learning",
+          "es": "Candidata a Doctorado, Investigando Aprendizaje Profundo"
         },
         "image": "/images/students/1.jpg"
       },
@@ -188,9 +215,9 @@
         "id": "liam-walker",
         "name": "Liam Walker",
         "role": {
-          "pt-BR": "Mestrando, Trabalhando com Análise de Séries Temporais",
-          "en-US": "Master's Student, Working on Time Series Analysis",
-          "es-ES": "Estudiante de Maestría, Trabajando en Análisis de Series Temporales"
+          "pt": "Mestrando, Trabalhando com Análise de Séries Temporais",
+          "en": "Master's Student, Working on Time Series Analysis",
+          "es": "Estudiante de Maestría, Trabajando en Análisis de Series Temporales"
         },
         "image": "/images/students/2.jpg"
       },
@@ -198,9 +225,9 @@
         "id": "sophia-hayes",
         "name": "Sophia Hayes",
         "role": {
-          "pt-BR": "Doutoranda, Foco em Processamento de Linguagem Natural",
-          "en-US": "PhD Candidate, Focusing on Natural Language Processing",
-          "es-ES": "Candidata a Doctorado, Enfocada en Procesamiento de Lenguaje Natural"
+          "pt": "Doutoranda, Foco em Processamento de Linguagem Natural",
+          "en": "PhD Candidate, Focusing on Natural Language Processing",
+          "es": "Candidata a Doctorado, Enfocada en Procesamiento de Lenguaje Natural"
         },
         "image": "/images/students/3.jpg"
       },
@@ -208,66 +235,35 @@
         "id": "lucas-foster",
         "name": "Lucas Foster",
         "role": {
-          "pt-BR": "Mestrando, Explorando Aprendizado por Reforço",
-          "en-US": "Master's Student, Exploring Reinforcement Learning",
-          "es-ES": "Estudiante de Maestría, Explorando Aprendizaje por Refuerzo"
+          "pt": "Mestrando, Explorando Aprendizado por Reforço",
+          "en": "Master's Student, Exploring Reinforcement Learning",
+          "es": "Estudiante de Maestría, Explorando Aprendizaje por Refuerzo"
+        },
+        "image": "/images/students/4.jpg"
+      },
+      {
+        "id": "sophia-hayes",
+        "name": "Sophia Hayes",
+        "role": {
+          "pt": "Doutoranda, Foco em Processamento de Linguagem Natural",
+          "en": "PhD Candidate, Focusing on Natural Language Processing",
+          "es": "Candidata a Doctorado, Enfocada en Procesamiento de Lenguaje Natural"
+        },
+        "image": "/images/students/3.jpg"
+      },
+      {
+        "id": "lucas-foster",
+        "name": "Lucas Foster",
+        "role": {
+          "pt": "Mestrando, Explorando Aprendizado por Reforço",
+          "en": "Master's Student, Exploring Reinforcement Learning",
+          "es": "Estudiante de Maestría, Explorando Aprendizaje por Refuerzo"
         },
         "image": "/images/students/4.jpg"
       }
     ]
   },
   "contact": {
-    "title": {
-      "pt-BR": "Entre em contato",
-      "en-US": "Contact Us",
-      "es-ES": "Contáctenos"
-    },
-    "description": {
-      "pt-BR": "Tem dúvidas ou deseja colaborar? Envie-nos uma mensagem e entraremos em contato com você o mais rápido possível.",
-      "en-US": "Have questions or want to collaborate? Send us a message and we'll get back to you as soon as possible.",
-      "es-ES": "¿Tiene preguntas o desea colaborar? Envíenos un mensaje y nos pondremos en contacto con usted lo antes posible."
-    },
-    "form": {
-      "name": {
-        "pt-BR": "Nome",
-        "en-US": "Name",
-        "es-ES": "Nombre"
-      },
-      "email": {
-        "pt-BR": "Email",
-        "en-US": "Email",
-        "es-ES": "Correo electrónico"
-      },
-      "subject": {
-        "pt-BR": "Assunto",
-        "en-US": "Subject",
-        "es-ES": "Asunto"
-      },
-      "message": {
-        "pt-BR": "Mensagem",
-        "en-US": "Message",
-        "es-ES": "Mensaje"
-      },
-      "submit": {
-        "pt-BR": "Enviar Mensagem",
-        "en-US": "Send Message",
-        "es-ES": "Enviar Mensaje"
-      },
-      "sending": {
-        "pt-BR": "Enviando...",
-        "en-US": "Sending...",
-        "es-ES": "Enviando..."
-      },
-      "success": {
-        "pt-BR": "Mensagem enviada com sucesso! Entraremos em contato em breve.",
-        "en-US": "Message sent successfully! We'll get back to you soon.",
-        "es-ES": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto."
-      },
-      "error": {
-        "pt-BR": "Falha ao enviar mensagem. Por favor, tente novamente mais tarde.",
-        "en-US": "Failed to send message. Please try again later.",
-        "es-ES": "Error al enviar el mensaje. Por favor, inténtelo de nuevo más tarde."
-      }
-    }
+    "email": "gabriel_mendonca03@hotmail.com"
   }
 }

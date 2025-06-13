@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { Button } from '~/components/ui/button';
 import { Input } from '~/components/ui/input';
 import { Textarea } from '~/components/ui/textarea';
-import { useLanguage } from '~/hooks/use-language';
+import { useData } from '~/hooks/use-data';
 
 export function ContactForm() {
-  const { t } = useLanguage();
+  const { getData } = useData();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -30,7 +30,7 @@ export function ContactForm() {
     <section id="contact" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">
-          {t('contact.title')}
+          {getData('contact.title')}
         </h2>
         <div className="max-w-2xl mx-auto">
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -39,7 +39,7 @@ export function ContactForm() {
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-                {t('contact.name')}
+                {getData('contact.name')}
               </label>
               <Input
                 id="name"
@@ -55,7 +55,7 @@ export function ContactForm() {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-                {t('contact.email')}
+                {getData('contact.email')}
               </label>
               <Input
                 id="email"
@@ -72,7 +72,7 @@ export function ContactForm() {
                 htmlFor="subject"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-                {t('contact.subject')}
+                {getData('contact.subject')}
               </label>
               <Input
                 id="subject"
@@ -88,7 +88,7 @@ export function ContactForm() {
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-                {t('contact.message')}
+                {getData('contact.message')}
               </label>
               <Textarea
                 id="message"
@@ -101,7 +101,7 @@ export function ContactForm() {
               />
             </div>
             <Button type="submit" className="w-full">
-              {t('contact.submit')}
+              {getData('contact.submit')}
             </Button>
           </form>
         </div>

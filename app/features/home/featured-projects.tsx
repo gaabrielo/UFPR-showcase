@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import {
   Card,
   CardContent,
@@ -5,20 +6,19 @@ import {
   CardHeader,
   CardTitle,
 } from '~/components/ui/card';
-import { useLanguage } from '~/hooks/use-language';
+import { useData } from '~/hooks/use-data';
 import { cn } from '~/lib/utils';
 
 export function FeaturedProjects() {
-  const { t } = useLanguage();
+  const { t } = useTranslation('translation', { keyPrefix: 'projects' });
+  const { getData } = useData();
 
   return (
     <section id="projects" className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12">
-          {t('featuredProjects.title')}
-        </h2>
+        <h2 className="text-3xl font-bold mb-12">{t('title')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {t('featuredProjects.projects').map((project: any, index: number) => (
+          {getData('projects.list').map((project: any, index: number) => (
             <Card key={index} className="h-full pt-0 overflow-hidden">
               <CardHeader
                 className={cn('h-48 bg-gradient-to-br', project.gradient)}

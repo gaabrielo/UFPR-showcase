@@ -1,9 +1,12 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '~/components/ui/button';
 import { Input } from '~/components/ui/input';
 import { cn } from '~/lib/utils';
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,13 +29,13 @@ export default function Contact() {
       await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulated API call
       setSubmitStatus({
         type: 'success',
-        message: "Message sent successfully! We'll get back to you soon.",
+        message: t('contact.form.success'),
       });
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
       setSubmitStatus({
         type: 'error',
-        message: 'Failed to send message. Please try again later.',
+        message: t('contact.form.error'),
       });
     } finally {
       setIsSubmitting(false);
@@ -49,18 +52,11 @@ export default function Contact() {
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-2xl mx-auto">
-        {/* <h1 className="text-3xl font-bold text-gray-900 mb-2">Contact Us</h1> */}
         <h1 className="text-3xl font-bold text-gray-900 mb-2">
-          Entre em contato
+          {t('contact.title')}
         </h1>
-        {/* <p className="text-gray-600 mb-8">
-          Have questions or want to collaborate? Send us a message and we'll get
-          back to you as soon as possible.
-        </p> */}
-        <p className="text-gray-600 mb-8">
-          Tem dúvidas ou deseja colaborar? Envie-nos uma mensagem e entraremos
-          em contato com você o mais rápido possível.
-        </p>
+
+        <p className="text-gray-600 mb-8">{t('contact.description')}</p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -69,7 +65,7 @@ export default function Contact() {
                 htmlFor="name"
                 className="text-sm font-medium text-gray-700"
               >
-                Name
+                {t('contact.form.name')}
               </label>
               <Input
                 id="name"
@@ -77,7 +73,7 @@ export default function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                placeholder="Your name"
+                placeholder={t('contact.form.placeholder.name')}
               />
             </div>
             <div className="space-y-2">
@@ -85,7 +81,7 @@ export default function Contact() {
                 htmlFor="email"
                 className="text-sm font-medium text-gray-700"
               >
-                Email
+                {t('contact.form.email')}
               </label>
               <Input
                 id="email"
@@ -94,7 +90,7 @@ export default function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                placeholder="your.email@example.com"
+                placeholder={t('contact.form.placeholder.email')}
               />
             </div>
           </div>
@@ -104,7 +100,7 @@ export default function Contact() {
               htmlFor="subject"
               className="text-sm font-medium text-gray-700"
             >
-              Subject
+              {t('contact.form.subject')}
             </label>
             <Input
               id="subject"
@@ -112,7 +108,7 @@ export default function Contact() {
               value={formData.subject}
               onChange={handleChange}
               required
-              placeholder="What is this regarding?"
+              placeholder={t('contact.form.placeholder.subject')}
             />
           </div>
 
@@ -121,7 +117,7 @@ export default function Contact() {
               htmlFor="message"
               className="text-sm font-medium text-gray-700"
             >
-              Message
+              {t('contact.form.message')}
             </label>
             <textarea
               id="message"
@@ -137,7 +133,7 @@ export default function Contact() {
                 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring',
                 'disabled:cursor-not-allowed disabled:opacity-50'
               )}
-              placeholder="Your message here..."
+              placeholder={t('contact.form.placeholder.message')}
             />
           </div>
 
@@ -159,7 +155,9 @@ export default function Contact() {
             disabled={isSubmitting}
             className="w-full md:w-auto"
           >
-            {isSubmitting ? 'Sending...' : 'Send Message'}
+            {isSubmitting
+              ? t('contact.form.sending')
+              : t('contact.form.submit')}
           </Button>
         </form>
       </div>

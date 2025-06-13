@@ -1,8 +1,7 @@
-import { Button } from '~/components/ui/button';
-import { useLanguage } from '~/hooks/use-language';
+import { useTranslation } from 'react-i18next';
 
 export function Hero() {
-  const { t } = useLanguage();
+  const { t } = useTranslation('translation', { keyPrefix: 'hero' });
 
   return (
     <>
@@ -36,7 +35,7 @@ export function Hero() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-teal-700/50" />
 
             <video
-              src={t('hero.video')}
+              src="/videos/cover-4k.mp4"
               autoPlay
               muted
               loop
@@ -46,13 +45,9 @@ export function Hero() {
           </div>
 
           <div className="mt-8">
-            <h2 className="text-2xl font-bold text-gray-900">
-              {t('hero.title')}
-            </h2>
+            <h2 className="text-2xl font-bold text-gray-900">{t('title')}</h2>
           </div>
-          <p className="text-gray-600 max-w-2xl mt-4">
-            {t('hero.description')}
-          </p>
+          <p className="text-gray-600 max-w-2xl mt-4">{t('description')}</p>
         </div>
       </section>
 

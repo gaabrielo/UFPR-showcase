@@ -1,33 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import data from '~/data/data.json';
 
-export type Language = 'pt-BR' | 'en-US' | 'es-ES';
+export type Language = 'pt' | 'en' | 'es';
+export function useData() {
+  const { i18n } = useTranslation();
 
-type TranslationValue = {
-  [key in Language]?: string;
-};
-
-type TranslationObject = {
-  [key: string]: TranslationValue | TranslationObject | any;
-};
-
-export function useLanguage() {
-  const [language, setLanguage] = useState<Language>('pt-BR');
-
-  useEffect(() => {
-    // Get language from localStorage or default to pt-BR
-    const savedLanguage = localStorage.getItem('language') as Language;
-    if (savedLanguage) {
-      setLanguage(savedLanguage);
-    }
-  }, []);
-
-  const changeLanguage = (newLanguage: Language) => {
-    setLanguage(newLanguage);
-    localStorage.setItem('language', newLanguage);
-  };
-
-  const t = (key: string) => {
+  const getData = (key: string) => {
     // Split the key by dots to access nested properties
     const keys = key.split('.');
     let value: any = data;
@@ -42,8 +20,8 @@ export function useLanguage() {
     }
 
     // If the value is an object with language keys, return the translation
-    if (value && typeof value === 'object' && language in value) {
-      return value[language];
+    if (value && typeof value === 'object' && i18n.language in value) {
+      return value[i18n.language];
     }
 
     // If the value is an array, map through it and translate each item
@@ -52,8 +30,8 @@ export function useLanguage() {
         if (typeof item === 'object' && item !== null) {
           const translatedItem: Record<string, any> = {};
           for (const [k, v] of Object.entries(item)) {
-            if (typeof v === 'object' && v !== null && language in v) {
-              translatedItem[k] = (v as TranslationValue)[language];
+            if (typeof v === 'object' && v !== null && i18n.language in v) {
+              translatedItem[k] = v[i18n.language as keyof typeof v];
             } else {
               translatedItem[k] = v;
             }
@@ -68,8 +46,6 @@ export function useLanguage() {
   };
 
   return {
-    language,
-    changeLanguage,
-    t,
+    getData,
   };
 }

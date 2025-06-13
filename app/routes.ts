@@ -10,6 +10,6 @@ export default [
     index('routes/home.tsx'),
     route('/contact', 'routes/contact.tsx'),
     route('/publishing', 'routes/publishing.tsx'),
-    route('/old', 'routes/home_old.tsx'),
   ]),
+  route('api/locales/:lng/:ns', 'routes/locales.ts'),
 ] satisfies RouteConfig;
