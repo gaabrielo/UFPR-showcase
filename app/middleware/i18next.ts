@@ -1,5 +1,5 @@
 import { initReactI18next } from 'react-i18next';
-import { createCookie, createCookieSessionStorage } from 'react-router';
+import { createCookie } from 'react-router';
 import { unstable_createI18nextMiddleware } from 'remix-i18next/middleware';
 import en from '../locales/en';
 import es from '../locales/es';
@@ -8,7 +8,7 @@ import pt from '../locales/pt';
 export const localeCookie = createCookie('lng', {
   path: '/',
   sameSite: 'lax',
-  secure: process.env.NODE_ENV === 'production',
+  secure: import.meta.env.PROD,
   httpOnly: true,
 });
 
