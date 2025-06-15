@@ -1,8 +1,10 @@
 ## Features
 
 - [x] Incluir sidebar
-- [ ] Incluir links de interesse para integrantes
+- [x] Incluir links de interesse para integrantes
 - [ ] Incluir rota de publicações acadêmicas
+- [ ] Incluir rota p/ listagem e visualização de projetos
+- [ ] Incluir rota p/ listagem e visualização de integrantes
 - [x] Incluir tradução com i18n
 - [x] Formatar base de dados para conteúdo modificável (JSON file)
 
